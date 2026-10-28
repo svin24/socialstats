@@ -1,0 +1,46 @@
+# Build artifacts
+/result
+/result-*
+/socialstats
+/socialstats.test
+/bin/
+/dist/
+
+# Go
+/vendor/
+*.exe
+*.test
+*.out
+coverage.out
+
+# Secrets, tokens, OAuth client files — never commit
+.env
+.env.*
+!.env.example
+client_secret.json
+client_secret*.json
+token.json
+*-token.json
+*.pem
+*.key
+*.p12
+webhook-url
+webhook-url.txt
+
+# Runtime config and data (live next to the machine, not in git)
+/data/
+config.local.json
+
+# X exports dropped in the repo by accident
+/account_analytics*.csv
+/tweet_activity*.csv
+/post_activity*.csv
+
+# Editor / session
+.grok-*
+.grok-run.log
+.grok-task.md
+.idea/
+.vscode/
+*~
+.DS_Store
